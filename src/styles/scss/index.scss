@@ -1,6 +1,10 @@
 * {
     font-family: 'Roboto';
     font-weight: 400;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,4 +16,92 @@ body {
 .cover-image {
     width: 50%;
     height: 100vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+
+.header {
+    margin-bottom: 25px;
+    &__welcome {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 2px;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+.box {
+    width: 350px;
+}
+
+.form {
+    &__field {
+        width: 100%;
+    }
+    &__label {
+        margin: 11px 0;
+        display: block;
+    }
+    &__input {
+        padding: 17px 20px;
+        border: 1px solid #E8E8E8;
+        font-size: 14px;
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+    }
+    &__footer {
+        margin: 28px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        color: #4A5568;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    &__btn {
+        padding: 15px 0;
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-top: 15px;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+        
+        &--login {
+            background-color: #04C35C;
+        }
+        
+        &--google {
+            background-color: #2D3748;
+        }
+
+        img {
+            margin-right: 11px;
+            transform: translateY(3px);
+        }
+    }
+    &__checkbox {
+        margin-right: 11px;
+    }
+    &__rememberlabel {
+        font-size: 14px;
+    }
 }
