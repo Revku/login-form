@@ -105,3 +105,17 @@ body {
         font-size: 14px;
     }
 }
+
+@media (max-width: 1000px) {
+    .content {
+        width: 100%;
+    }
+
+    .cover-image {
+        display: none;
+    }
+
+    .box {
+        width: 320px;
+    }
+}
